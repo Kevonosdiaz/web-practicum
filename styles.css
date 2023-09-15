@@ -1,0 +1,19 @@
+@import url("https://fonts.google.com/specimen/Titillium+Web");
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: #24264c;
+}
+
+.header.left-side {
+    display: flex;
+    align-self: flex-start;
+    gap: 0.5rem;
+}
+
+.header.right-side {
+    align-self: flex-end;
+}
