@@ -5,20 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hi-TechSOLN</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="header">
-            <div class="left-side"></div>
-            <button class="right-side">SHOP</button>
+            <div class="left-side">
+                <div id="header-main-text">Hi-TechSOLN</div>
+                <div id="header-sub-text">
+                    <em>Hi-Tech solutions for everyone.</em>
+                </div>
+            </div>
+            <button>SHOP</button>
         </div>
-        <div class="intro"></div>
-        <!-- Video here -->
-        <div class="video-container">
+        <div class="intro">
+            <!-- TODO: Fine-tune these numbers -->
+            <picture>
+                <source
+                    srcset="/assets/top_image_small.png"
+                    media="(max-width: 640px)"
+                />
+                <source
+                    srcset="/assets/top_image_medium.png"
+                    media="(max-width: 1000px)"
+                />
+                <source srcset="/assets/top_image_large.png" />
+                <img src="/assets/top_image_small.png" alt="View of a planet" />
+            </picture>
+
+            <!-- Position text over picture -->
+            <div class="textbox">
+                <div id="intro-main">Lorem ipsum dolor sit amet</div>
+                <div id="intro-sub">
+                    Aenean vulputate eleifend te llus. leo ligula, porttitor eu,
+                    co nsequat vitae, eleifend ac, enim.
+                </div>
+            </div>
+        </div>
+        <!-- <div class="video-container">
             <img
                 src="./assets/video_placeholder.png"
                 alt="Placeholder for a video"
             />
-        </div>
+        </div> -->
         <div class="products"></div>
         <div class="reasons"></div>
         <div class="about"></div>

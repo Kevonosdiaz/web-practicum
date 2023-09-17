@@ -1,19 +1,91 @@
-@import url("https://fonts.google.com/specimen/Titillium+Web");
+/* 
+Colours to use:
+
+navy:               #25274D;
+dusty-navy:         #464866;
+light-grey:         #AAABB8;
+light-blue:         #2E9CCA;
+dusty-blue:         #29648A;
+grey:               #7E8082;
+white:              #FFF;
+white-off-white:    #FEF9F7;
+black-off-black:    #3C3C3C;
+black:              #1F1F1F;
+*/
+
+/* @import url("https://fonts.google.com/specimen/Titillium+Web"); */
 body {
     font-family: "Titillium Web", sans-serif;
+    margin: 0;
 }
+
+/* Header Styles */
 
 .header {
     display: flex;
+    color: #fff;
     background-color: #24264c;
+    height: 3.5rem;
+    padding-left: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header.left-side {
+.header,
+.left-side {
     display: flex;
-    align-self: flex-start;
-    gap: 0.5rem;
+    gap: 2.5rem;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
 }
 
-.header.right-side {
-    align-self: flex-end;
+#header-main-text {
+    font-size: 28px;
+    font-weight: 300;
 }
+
+#header-sub-text {
+    font-size: 16px;
+}
+
+.header button {
+    /* position: absolute;
+    right: 0; */
+    background-color: #2e9cca;
+    border: none;
+    color: #fff;
+    height: 3.5rem;
+    width: 6rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Use a media query to "shift" the position of the SHOP button */
+
+/* Intro Styles */
+intro .textbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-main {
+    font-weight: 600;
+    /* Consider using vw */
+    font-size: 36px;
+}
+
+#intro-sub {
+    font-weight: 400;
+}
+/* Product Styles */
+
+/* Reason Section Styles */
+
+/* About Section Styles */
+
+/* Shipping Section Styles */
+
+/* Contact Section Styles */
+
+/* Footer Styles */
