@@ -49,7 +49,7 @@ body {
     font-size: 16px;
 }
 
-.header button {
+button {
     /* position: absolute;
     right: 0; */
     background-color: #2e9cca;
@@ -64,13 +64,45 @@ body {
 /* Use a media query to "shift" the position of the SHOP button */
 
 /* Intro Styles */
-intro .textbox {
+
+.intro {
+    position: relative;
+    text-align: center;
+    background-image: url(./assets/top_image_large.png);
+    background-size: cover;
+    width: 100vw;
+    height: 25em;
+}
+
+/* use vh/vw for height and width of div */
+@media (max-width: 640px) {
+    .intro {
+        background-image: url(./assets/top_image_medium.png);
+    }
+}
+
+@media (max-width: 1280px) {
+    .intro {
+        background-image: url(./assets/top_image_medium.png);
+    }
+}
+
+.intro .textbox {
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    top: 48px;
+    left: 56px;
+    color: #fff;
     display: flex;
     flex-direction: column;
+    gap: 1em;
+    width: 35%;
+    text-align: left;
 }
 
 #intro-main {
-    font-weight: 600;
+    font-weight: 500;
     /* Consider using vw */
     font-size: 36px;
 }
@@ -87,5 +119,23 @@ intro .textbox {
 /* Shipping Section Styles */
 
 /* Contact Section Styles */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #29648a;
+}
 
 /* Footer Styles */
+.footer {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #24264c;
+    color: #fff;
+    font-size: 13px;
+    border-top: 2px solid #2e9cca;
+    /* TODO Change the above to white */
+}
