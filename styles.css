@@ -87,7 +87,7 @@ button {
     }
 }
 
-.intro .textbox {
+.intro .picture-textbox {
     /* display: flex;
     flex-direction: column; */
     position: absolute;
@@ -110,6 +110,46 @@ button {
 #intro-sub {
     font-weight: 400;
 }
+
+/* Textbox (below picture) Styles */
+
+.textbox {
+    display: flex;
+    align-items: center;
+    padding: 2rem 4.5rem 2rem 4.5rem;
+}
+
+.internal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    /* padding: 2rem 4.5rem 2rem 4.5rem; */
+}
+
+.topbox,
+.bottombox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.textbox .sub-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.textbox .normal-text {
+    font-size: 16px;
+}
+
+/* Video Placeholder Styles */
+
+.video-container {
+    background-color: #24264c;
+    padding: 3rem 2rem 1rem 2rem;
+}
+
 /* Product Styles */
 
 /* Reason Section Styles */
@@ -119,12 +159,29 @@ button {
 /* Shipping Section Styles */
 
 /* Contact Section Styles */
+
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #29648a;
+    padding: 5rem 16rem 5rem 16rem;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    gap: 2rem;
+}
+
+#contact-container .sub-header {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* Footer Styles */
