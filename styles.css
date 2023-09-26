@@ -50,6 +50,14 @@ body {
 }
 
 button {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #2e9cca;
+    border: none;
+    color: #fff;
+}
+
+.header button {
     /* position: absolute;
     right: 0; */
     background-color: #2e9cca;
@@ -147,11 +155,29 @@ button {
 
 .video-container {
     background-color: #24264c;
-    padding: 3rem 2rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
 }
 
 /* Product Styles */
 
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem 2rem 3rem;
+    gap: 2rem;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Reason Section Styles */
 
 /* About Section Styles */
@@ -184,6 +210,15 @@ button {
     font-weight: 500;
 }
 
+.contact button {
+    padding: 1em 2.5em 1em 2.5em;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Footer Styles */
 .footer {
     display: flex;
@@ -193,6 +228,6 @@ button {
     background-color: #24264c;
     color: #fff;
     font-size: 13px;
-    border-top: 2px solid #2e9cca;
+    border-top: 1px solid #aaabb8;
     /* TODO Change the above to white */
 }
