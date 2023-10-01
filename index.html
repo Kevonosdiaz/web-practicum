@@ -11,10 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hi-TechSOLN</title>
         <link rel="stylesheet" href="styles.css" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
             rel="stylesheet"
         />
     </head>
@@ -29,20 +30,6 @@
             <button>SHOP</button>
         </div>
         <div class="intro">
-            <!-- TODO: Fine-tune these numbers -->
-            <!-- <picture>
-                <source
-                    srcset="/assets/top_image_small.png"
-                    media="(max-width: 640px)"
-                />
-                <source
-                    srcset="/assets/top_image_medium.png"
-                    media="(max-width: 1280px)"
-                />
-                <source srcset="/assets/top_image_large.png" />
-                <img src="/assets/top_image_small.png" alt="View of a planet" />
-            </picture> -->
-
             <!-- Position text over picture -->
             <div class="picture-textbox">
                 <div id="intro-main">Lorem Ipsum dolor sit amet</div>
@@ -128,7 +115,30 @@
             </div>
         </div>
         <div class="about"></div>
-        <div class="shipping"></div>
+        <div class="shipping">
+            <!-- Flexbox w/ horizontal split -->
+            <div id="image-container">
+                <img src="./assets/to_top.png" alt="Arrow pointing up" />
+                <!-- Add truck here and use media query to toggle visibility -->
+            </div>
+            <div id="shipping-container">
+                <!-- Flexbox w/ vertical splits -->
+                <picture>
+                    <!-- <source
+                        media="(min-width: 1280px)"
+                        srcset="/assets/shipping_icon_large.png"
+                    /> -->
+                    <source
+                        media="(min-width: 640px)"
+                        srcset="/assets/shipping_icon_medium.png"
+                    />
+                    <img
+                        src="/assets/shipping_icon_small.png"
+                        alt="Delivery truck"
+                    />
+                </picture>
+            </div>
+        </div>
         <div class="contact">
             <div id="contact-container">
                 <div class="sub-header">
