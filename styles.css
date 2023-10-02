@@ -246,6 +246,16 @@ button {
         padding-top: 3rem;
         padding-bottom: 3rem;
         width: 100wv;
+        font-size: 1.6rem;
+    }
+
+    .product-button {
+        font-size: 1.4rem;
+        width: auto;
+        height: auto;
+        padding: 1.2rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
     }
 
     .products-container {
