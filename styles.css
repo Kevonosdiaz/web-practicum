@@ -358,15 +358,16 @@ button {
 
 .about {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5rem 4rem 3rem 4rem;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 36vw;
 }
 
 .about-header {
@@ -374,15 +375,8 @@ button {
     font-size: 1.5rem;
 }
 
-.about ul {
-    list-style: none;
-}
-
-.about ul li::before {
-    content: "•";
-    display: inline-block;
-    width: 1rem;
-    margin-left: -1rem;
+ul li::marker {
+    color: #aaabb8;
 }
 
 /* Shipping Section Styles */
