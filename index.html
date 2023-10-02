@@ -20,7 +20,7 @@
         />
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="top">
             <div class="left-side">
                 <div id="header-main-text">Hi-TechSOLN</div>
                 <div id="header-sub-text">
@@ -51,9 +51,9 @@
                     <div class="sub-header">Why should shop with us.</div>
                     <div class="normal-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut dapibus leo quis risus tempor, henderit molestie
+                        Ut dapibus leo quis risus tempor, hendrerit molestie
                         felis dictum. Proin nunc elit, congue vehicula varius
-                        ac, soliticitudin ut sem. Etiam ultrices quis ipsum at
+                        ac, solliticitudin ut sem. Etiam ultrices quis ipsum at
                         consequat.
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="normal-text">Customized - Androids</div>
                     <div class="normal-text">
                         Proin semper nibh nisl, vel fringilla dolor efficitur a.
-                        Donect et leo eleifend, ultricies nunc vel, lobortis
+                        Donec et leo eleifend, ultricies nunc vel, lobortis
                         eros.
                     </div>
                     <button class="normal-button product-button">
@@ -110,7 +110,7 @@
                     <div class="normal-text">
                         Cras ullamcorper eget lorem elementum hendrerit. Ut
                         velit lectus, pretium vitae sem ac, imperdiet efficitur
-                        eros.
+                        neque.
                     </div>
                     <button class="normal-button product-button">BUY VR</button>
                 </div>
@@ -140,19 +140,118 @@
             </div>
         </div>
         <div class="reasons">
-            <div class="container">
-                <!-- img -->
-                <div id="reason-header">Top 6 Reasons to Shop here!</div>
+            <!-- Use background image -->
+            <div id="reason-header">
+                <img src="/assets/flourish_logo.png" alt="" />
+                <div id="reason-header-text">Top 6 Reasons to Shop here!</div>
             </div>
-            <div class="container">
-                <!-- Reasons go here -->
+            <div id="reasons-container">
+                <ol id="reason-list1" class="reason-list">
+                    <li>
+                        We Investigate the Market
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>
+                        Our Business Plan has no Problems
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>
+                        We Finance a LOT
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                </ol>
+                <ol id="reason-list2" class="reason-list" start="4">
+                    <li>
+                        Good Location
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>
+                        We're Flexible
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li>
+                        We don't expand too fast
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                </ol>
             </div>
         </div>
-        <div class="about"></div>
+        <div class="about">
+            <div class="about-container">
+                <div class="about-header">All about our Tech</div>
+                <div class="about-normal">
+                    <ul>
+                        <li>
+                            Aenean cursus nulla eget diam molestie, ac
+                            solliticitudin orci mattis.
+                        </li>
+                        <li>
+                            Etiam convallis elementum leo, sit amet scelerisque
+                            tellus pulvinar eget.
+                        </li>
+                        <li>
+                            usce convallis venenatis neque, ut egestas purus
+                            tempor at.
+                        </li>
+                        <li>Proin ac feugiat quam.</li>
+                        <li>Fusce faucibus tempus ullamcorper.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-header">
+                    Combining customization with personalization
+                </div>
+                <div class="about-normal">
+                    <div>CUSTOMIZATION</div>
+                    <ul>
+                        <li>
+                            Aenean cursus nulla eget diam molestie, ac
+                            solliticitudin orci mattis.
+                        </li>
+                        <li>
+                            Etiam convallis elementum leo, sit amet scelerisque
+                            tellus pulvinar eget.
+                        </li>
+                        <li>
+                            usce convallis venenatis neque, ut egestas purus
+                            tempor at.
+                        </li>
+                    </ul>
+                    <div>PERSONALIZATION</div>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut dapibus leo quis risus tempor, hendrerit
+                            molestie felis dictum.
+                        </li>
+                        <li>
+                            Proin nunc elit, congue vehicula varius ac,
+                            solliticitudin ut sem.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="shipping">
             <!-- Flexbox w/ horizontal split -->
             <div id="image-container">
-                <img src="./assets/to_top.png" alt="Arrow pointing up" />
+                <a href="#top">
+                    <img src="./assets/to_top.png" alt="Arrow pointing up" />
+                </a>
+
                 <!-- Add truck here and use media query to toggle visibility -->
             </div>
             <div id="shipping-container">
@@ -176,11 +275,11 @@
         <div class="contact">
             <div id="contact-container">
                 <div class="sub-header">
-                    Aenean massa cum soclis natoque penatibus et magnic dis
+                    Aenean massa cum sociis natoque penatibus et magnis dis
                     parturient?
                 </div>
                 <div class="normal-text">
-                    Lae, justo. Nullam dictum felis eu pede nollis pretium.
+                    Lae, justo. Nullam dictum felis eu pede mollis pretium.
                     Integer tincidunt. Cras dapibus.
                 </div>
                 <button>CONTACT US</button>
