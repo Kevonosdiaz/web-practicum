@@ -424,6 +424,21 @@ ul li::marker {
 
 /* Shipping Section Styles */
 
+.shipping {
+    /* display: flex; */
+    padding: 3rem 3rem 3rem 0vw;
+    position: relative;
+    background-color: #fef9f7;
+}
+
+#shipping-container {
+    display: flex;
+}
+
+#shipping-text-container {
+    display: flex;
+}
+
 /* Contact Section Styles */
 
 .contact {
@@ -466,14 +481,33 @@ ul li::marker {
     align-items: center;
 }
 
+@media (max-width: 640px) {
+    #contact-container {
+        align-items: flex-start;
+        text-align: left;
+        width: 90vw;
+    }
+}
+
 /* Footer Styles */
 .footer {
     display: flex;
     height: 5rem;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background-color: #24264c;
     color: #fff;
     font-size: 1.2rem;
     border-top: 1px solid #aaabb8;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .footer {
+        height: 8rem;
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
