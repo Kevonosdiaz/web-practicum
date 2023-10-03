@@ -72,9 +72,31 @@ button {
     border: none;
     color: #fff;
     height: 3.5rem;
-    width: 6rem;
+    width: 7.5rem;
     font-size: 12px;
     font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: 10rem;
+        padding-left: 1.5rem;
+    }
+
+    .left-side {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    #header-main-text {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    #header-sub-text {
+        font-size: 1.2rem;
+    }
 }
 
 /* Use a media query to "shift" the position of the SHOP button */
@@ -93,8 +115,26 @@ button {
 
 /* use vh/vw for height and width of div */
 @media (max-width: 640px) {
+    #header-button {
+        display: none;
+    }
+
+    .picture-textbox div {
+        display: none;
+    }
+
+    #mobile-box .sub-header {
+        font-weight: 400;
+    }
+
     .intro {
-        background-image: url(./assets/top_image_small.png);
+        height: 25rem;
+    }
+}
+
+@media (min-width: 641px) {
+    #mobile-box {
+        display: none;
     }
 }
 
@@ -145,6 +185,7 @@ button {
     padding: 1rem 2rem 1rem 2rem;
 }
 
+#mobile-box,
 .topbox,
 .bottombox {
     display: flex;
@@ -159,6 +200,49 @@ button {
 
 .textbox .normal-text {
     font-size: 20px;
+}
+
+@media (max-width: 640px) {
+    #mobile-box,
+    .topbox,
+    .bottombox {
+        gap: 2rem;
+    }
+
+    #mobile-box button {
+        max-width: 16vw;
+        height: 3.3rem;
+        font-size: 1.2rem;
+        font-size: 1.4rem;
+        width: auto;
+        height: auto;
+        padding: 1.2rem;
+        padding-left: 1.4rem;
+        padding-right: 1.5rem;
+    }
+
+    .textbox {
+        padding: 1.5rem 0.25rem 4.5rem 0.25rem;
+    }
+
+    .textbox .sub-header {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .textbox .normal-text {
+        font-size: 1.8rem;
+    }
+
+    .internal-box {
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+}
+
+@media (min-width: 641px) {
+    #mobile-box {
+        display: none;
+    }
 }
 
 /* Video Placeholder Styles */
@@ -244,10 +328,15 @@ button {
 @media (max-width: 640px) {
     .products {
         padding: 0;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         width: 100wv;
         font-size: 1.6rem;
+        gap: 5rem;
+    }
+
+    .products .sub-header {
+        font-size: 2.3rem;
     }
 
     .product-button {
@@ -262,6 +351,7 @@ button {
     .products-container {
         flex-direction: column;
         object-fit: fill;
+        gap: 5rem;
     }
 
     .product-set {
@@ -407,6 +497,8 @@ ul li::marker {
     .about {
         flex-direction: column;
         align-items: center;
+        gap: 2.5rem;
+        padding-bottom: 4rem;
     }
 
     .about-container {
@@ -445,10 +537,14 @@ ul li::marker {
     padding-left: 20vw; */
 }
 
+#image-container {
+    display: flex;
+    justify-content: end;
+}
+
 #image-container img {
     align-self: flex-end;
     width: 75%;
-    height: auto;
 }
 
 #shipping-container {
@@ -486,6 +582,14 @@ ul li::marker {
 @media (min-width: 641px) {
     #mobile-truck-img {
         display: none;
+    }
+
+    #image-container {
+        max-width: 4rem;
+    }
+
+    #image-container img {
+        width: 100%;
     }
 }
 
@@ -582,10 +686,26 @@ ul li::marker {
 }
 
 @media (max-width: 640px) {
+    .contact {
+        height: 16rem;
+    }
+
     #contact-container {
         align-items: flex-start;
         text-align: left;
         width: 90vw;
+    }
+
+    #contact-container .sub-header {
+        font-size: 2rem;
+    }
+
+    #contact-container .normal-text {
+        font-size: 1.6rem;
+    }
+
+    .contact button {
+        font-size: 1rem;
     }
 }
 
@@ -593,7 +713,7 @@ ul li::marker {
 .footer {
     display: flex;
     height: 5rem;
-    width: 100%;
+    /* width: 100%; */
     align-items: center;
     justify-content: center;
     background-color: #24264c;
@@ -606,7 +726,7 @@ ul li::marker {
 @media (max-width: 640px) {
     .footer {
         height: 8rem;
-        width: 100vw;
+        /* width: 100vw; */
         padding-left: 2rem;
         padding-right: 2rem;
     }
