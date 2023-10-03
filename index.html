@@ -246,32 +246,44 @@
             </div>
         </div>
         <div class="shipping">
-            <!-- Flexbox w/ horizontal split -->
-            <!-- <div id="image-container">
-                <a href="#top">
-                    <img src="./assets/to_top.png" alt="Arrow pointing up" />
-                </a>
-            </div> -->
+            <div id="shipping-top">
+                <div id="image-container">
+                    <a href="#top">
+                        <img
+                            src="./assets/to_top.png"
+                            alt="Arrow pointing up"
+                        />
+                    </a>
+                </div>
+                <img
+                    src="/assets/shipping_icon_small.png"
+                    alt="Delivery truck"
+                    id="mobile-truck-img"
+                />
+            </div>
+
             <div id="shipping-container">
-                <!-- Flexbox w/ vertical splits -->
-                <picture>
-                    <!-- <source
+                <div id="truck-img-container">
+                    <picture>
+                        <!-- <source
                         media="(min-width: 1280px)"
                         srcset="/assets/shipping_icon_large.png"
                     /> -->
-                    <source
-                        media="(min-width: 640px)"
-                        srcset="/assets/shipping_icon_medium.png"
-                    />
-                    <img
-                        src="/assets/shipping_icon_small.png"
-                        alt="Delivery truck"
-                        id="truck-img"
-                    />
-                </picture>
+                        <source
+                            media="(min-width: 640px)"
+                            srcset="/assets/shipping_icon_medium.png"
+                        />
+                        <img
+                            src="/assets/shipping_icon_small.png"
+                            alt="Delivery truck"
+                            id="truck-img"
+                        />
+                    </picture>
+                </div>
+
                 <div id="shipping-text-container">
-                    <div>
-                        <div class="about-header">We ship worldwide!</div>
+                    <div class="shipping-textbox">
+                        <div class="shipping-header">We ship worldwide!</div>
                         <div class="about-normal">WITHIN CANADA AND THE US</div>
                         <div class="about-normal">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -279,8 +291,8 @@
                             molestie felis dictum.
                         </div>
                     </div>
-                    <div>
-                        <div class="about-header">INTERNATIONAL SHIPPING</div>
+                    <div class="shipping-textbox shipping-textbox-right">
+                        <div class="about-normal">INTERNATIONAL SHIPPING</div>
                         <div class="about-normal">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Ut dapibus leo quis risus tempor, hendrerit
